@@ -1,0 +1,68 @@
+.home-page {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #3c2aa7, #1f0c02, #6d181f, #2c1c05, #990a22);
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
+  padding: 20px;
+  color: #020a13;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.home-page h1 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.refresh-button, .load-more-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1em;
+}
+
+.refresh-button:hover, .load-more-button:hover {
+  background-color: #0056b3;
+}
+
+.home-page h1 + .cocktail-list {
+  margin-top: 2em;
+}
+
+.cocktail-card {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.cocktail-card:hover {
+  transform: scale(1.05);
+}
+
+.cocktail-card h2 {
+  font-size: 1.2em;
+  color: #343a40;
+  margin-bottom: 0.5em;
+}
+
+.cocktail-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
